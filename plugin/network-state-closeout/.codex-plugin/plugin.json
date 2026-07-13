@@ -1,7 +1,7 @@
 {
   "name": "network-state-closeout",
-  "version": "0.1.0-pre.10",
-  "description": "Initialize a private global network-state skill, maintain categorized cards with progressive loading, and optionally synchronize it across devices through GitHub private repositories.",
+  "version": "0.1.0-pre.11",
+  "description": "Initialize a private global network-state skill with consent-based discovery, maintain categorized cards with progressive loading, and optionally synchronize it across devices through GitHub private repositories.",
   "author": {
     "name": "Network State Closeout contributors"
   },
@@ -18,7 +18,7 @@
   "interface": {
     "displayName": "Network State + Closeout Cards",
     "shortDescription": "Maintain private network facts and close out completed actions.",
-    "longDescription": "Create a private global network-state skill in the active Codex cache, load only relevant device and service cards, save confirmed facts locally with minimal ceremony, optionally synchronize across devices through a GitHub private repository, and create closeout cards only for substantial completed actions.",
+    "longDescription": "Create a private global network-state skill in the active Codex cache, ask before discovering local SSH, Docker, reverse-proxy, virtual-network, and VPS structure, load only relevant cards, save confirmed facts locally, optionally synchronize through a GitHub private repository, and create closeout cards only for substantial completed actions.",
     "developerName": "Network State Closeout contributors",
     "category": "Productivity",
     "capabilities": [
@@ -26,7 +26,7 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Use $initialize-network-state to create or adopt my private global network-state skill without scanning the network.",
+      "Use $initialize-network-state to explain the privacy boundary, ask for consent, and initialize my private network-state skill from approved local read-only sources.",
       "Use $initialize-network-state to help another device clone my GitHub private skill repository into its Codex skills cache.",
       "Use $network-state to read only relevant cards and save confirmed updates locally without network synchronization.",
       "Use $network-state to run the GitHub private synchronization gate and publish confirmed updates.",

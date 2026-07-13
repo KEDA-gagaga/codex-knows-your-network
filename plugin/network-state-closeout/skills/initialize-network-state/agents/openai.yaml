@@ -1,4 +1,4 @@
 interface:
   display_name: "Initialize Network State"
-  short_description: "初始化全局私人网络 skill，并引导其他设备从私人仓库安装"
-  default_prompt: "Use $initialize-network-state to create or adopt my private global network-state skill and optionally connect another device through GitHub private synchronization."
+  short_description: "经同意采集网络结构并初始化全局私人网络 skill"
+  default_prompt: "Use $initialize-network-state to create my private global network-state skill, explain the privacy boundary, and ask before collecting local network structure."

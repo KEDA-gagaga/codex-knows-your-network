@@ -39,7 +39,7 @@ SECRET_PATTERNS = (
     (
         "credential assignment",
         re.compile(
-            r"(?i)\b(?:password|passwd|token|api[_ -]?key|auth[_ -]?key|secret|cookie|recovery[_ -]?code)\b\s*[:=]\s*(?!unknown\b|none\b|<)[^\s`]+"
+            r"(?im)(?:^|[\s|`])(?:[a-z0-9.-]+[_-])?(?:password|passwd|passphrase|token|api[_ -]?key|auth[_ -]?key|private[_ -]?key|preshared[_ -]?key|pre-shared[_ -]?key|client[_ -]?secret|access[_ -]?key|secret[_ -]?access[_ -]?key|secret|cookie|session|recovery[_ -]?code)\s*[:=]\s*(?!unknown\b|none\b|<)[^\s`|]+"
         ),
     ),
 )

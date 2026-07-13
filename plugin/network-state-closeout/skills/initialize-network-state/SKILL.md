@@ -1,11 +1,11 @@
 ---
 name: initialize-network-state
-description: Initialize or adopt a private global network-state skill in the active Codex skills cache, or connect another device by cloning the same GitHub private repository into its .codex/skills directory. Use for first setup, private GitHub onboarding, or another-device installation; not routine updates.
+description: Initialize or adopt a private global network-state skill in the active Codex skills cache, optionally discover the user's network structure after informed consent, or connect another device by cloning the same GitHub private repository into its .codex/skills directory. Use for first setup, consent-based SSH/Docker/reverse-proxy/overlay/VPS inventory, private GitHub onboarding, or another-device installation; not routine updates.
 ---
 
 # Initialize Network State
 
-Create or adopt one private global skill. Do not discover or scan the user's network during onboarding.
+Create or adopt one private global skill. Never inspect network configuration, run discovery commands, scan the network, or contact another host before obtaining the required consent.
 
 ## Core model
 
@@ -15,7 +15,7 @@ Create or adopt one private global skill. Do not discover or scan the user's net
 - Project copies, Documents folders, and alternate clones are never daily working copies.
 - GitHub private repositories are currently the only cross-device synchronization route described by this plugin.
 
-## Choose one path
+## Choose one setup path
 
 1. New private skill: initialize an absent or empty target.
 2. Existing private skill: validate it without applying templates.
@@ -38,7 +38,19 @@ For a new skill, run:
 python3 <network-state-skill-directory>/scripts/init_profile.py --path <private-skill-directory>
 ```
 
-Update `profile.md` with the confirmed profile name and scope. Do not add device cards until facts are separately confirmed.
+Update `profile.md` with the confirmed profile name and scope. Do not invent device or service facts.
+
+## Offer consent-based discovery
+
+After the private skill exists, explain what may and may not be saved, make the explicit privacy promise below, then ask whether the user wants local read-only discovery. On an additional device, clone and validate the existing private skill first; never initialize an empty target before cloning.
+
+Promise in equivalent, unambiguous language:
+
+> I will only save network-structure facts you authorize. I will never place passwords, passphrases, tokens, API keys, private-key contents, VPN private or preshared keys, cookies, recovery codes, one-time codes, subscription URLs, or credential-bearing URLs into the private skill, closeout cards, Git staging, commits, or the GitHub repository. If encountered, I will discard the value and keep only a safe reference name or path when useful.
+
+If the user declines, keep the initialized cards empty and continue to validation. If the user agrees, read `references/discovery-guide.md`, inspect only the approved local read-only sources, ask only for important missing facts, and write confirmed structural facts directly into the matching cards.
+
+Local discovery consent does not authorize active subnet scanning, provider API calls, or logging in to another host. Obtain separate explicit authorization for each expanded scope. Prefer SSH for an authorized remote inspection.
 
 ## GitHub private synchronization
 
@@ -52,4 +64,4 @@ A local-only update remains available after synchronization is configured: updat
 python3 <network-state-skill-directory>/scripts/validate_profile.py --path <private-skill-directory>
 ```
 
-On POSIX systems, prefer directory mode `0700` and file mode `0600`. Report the active path, created/adopted/cloned result, GitHub synchronization status, and validation result without revealing endpoints or repository URLs.
+On POSIX systems, prefer directory mode `0700` and file mode `0600`. Report the active path, created/adopted/cloned result, discovery consent and collected categories, GitHub synchronization status, and validation result without revealing endpoints or repository URLs.

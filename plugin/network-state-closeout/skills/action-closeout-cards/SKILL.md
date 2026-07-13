@@ -33,12 +33,12 @@ docs/<action-or-service>-process-card.md
 
 ## Security
 
-Never write passwords, tokens, API keys, private keys, cookies, recovery codes, one-time codes, subscription secrets, UUIDs, or credential-bearing URLs. Use configuration paths, variable names, keychain aliases, or password-manager references.
+Never write passwords, passphrases, tokens, API keys, private-key contents, VPN private or preshared keys, cookies, sessions, recovery codes, one-time codes, subscription URLs, UUIDs, or credential-bearing URLs. Use configuration paths, variable names, keychain aliases, or password-manager references.
 
 Use `rg` for a quick heuristic scan, then inspect matches:
 
 ```bash
-rg -n "token=|password|passwd|api[_ -]?key|secret|cookie|BEGIN .*PRIVATE KEY|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" <status-card> <process-card>
+rg -n "token=|password|passwd|passphrase|api[_ -]?key|private[_ -]?key|preshared[_ -]?key|pre-shared[_ -]?key|secret|cookie|session|BEGIN .*PRIVATE KEY|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" <status-card> <process-card>
 ```
 
 Report card paths, project-index changes, network-card updates, and the sensitive-information check.

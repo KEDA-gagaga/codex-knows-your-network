@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize Network State"
+  short_description: "引导初始化私人网络状态、唯一资料目录与 GitHub 私人同步"
+  default_prompt: "Use $initialize-network-state to guide me through creating or adopting a private network-state profile and optionally enabling GitHub private synchronization."

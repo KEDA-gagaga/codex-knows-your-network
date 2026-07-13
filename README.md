@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-> Version: `0.1.4` · Stable release
+> Version: `0.1.5` · Stable release
 
 > Turn a constantly changing private network into a knowledge layer that Codex can use across projects, load on demand, and maintain over time—kept local or optionally shared across devices through a GitHub private repository.
 
@@ -21,8 +21,6 @@ The OpenAI Docs skill included with Codex offers a useful model. It does not fre
 `network-state-closeout` borrows this model for private network state that needs long-term maintenance. Stable categorization, writing rules, fast validation, security boundaries, and synchronization gates stay in the public plugin. Changing devices, services, addresses, access paths, and reusable troubleshooting knowledge live in the user's own global private skill and can be shared across devices through a GitHub private repository. Codex reads only the category cards needed for the current task and autonomously maintains confirmed durable facts.
 
 Scattered facts—Tailscale device addresses, Nginx reverse proxies, domains, TLS, Docker containers and ports, SSH, VPNs, and cross-device access paths—become maintainable network cards that are loaded only when needed.
-
-Routine confirmed facts go directly into network cards. Status cards and process cards are evaluated independently only when a completed action has lasting closeout value, and a process card also requires reliable evidence of the real process.
 
 The result is not a static inventory that quickly becomes stale, but a private knowledge workflow that evolves with the environment: state stays in the user's own global private skill and can remain local; capabilities are reused through the plugin; and only when private GitHub synchronization is enabled do agents on multiple devices share the same network knowledge. Each task still loads only the relevant facts into context.
 

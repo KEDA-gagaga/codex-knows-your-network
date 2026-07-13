@@ -1,10 +1,10 @@
-# Network State + Closeout Cards Plugin
+# Codex Knows Your Network
 
 **English** | [简体中文](README.zh-CN.md)
 
-> Version: `0.1.5` · Stable release
+> Version: `0.1.6` · Stable release
 
-> Turn a constantly changing private network into a knowledge layer that Codex can use across projects, load on demand, and maintain over time—kept local or optionally shared across devices through a GitHub private repository.
+> **Tell Codex once. Keep your network current.**
 
 ## Let Codex know what your network looks like now
 

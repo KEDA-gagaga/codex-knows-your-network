@@ -1,10 +1,10 @@
-# Network State + Closeout Cards Plugin
+# Codex Knows Your Network
 
 [English](README.md) | **简体中文**
 
-> 版本：`0.1.5` · 正式版
+> 版本：`0.1.6` · 正式版
 
-> 把不断变化的私人网络环境，整理成 Codex 可以跨项目使用、按需读取、持续维护的知识层；既可只保存在本机，也可通过 GitHub 私人仓库跨设备共享。
+> **只需告诉 Codex 一次，让你的网络状态持续保持最新。**
 
 ## 让 Codex 知道“现在的网络是什么样”
 

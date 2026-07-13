@@ -1,7 +1,7 @@
 {
   "name": "network-state-closeout",
   "interface": {
-    "displayName": "Network State Closeout"
+    "displayName": "Codex Knows Your Network"
   },
   "plugins": [
     {

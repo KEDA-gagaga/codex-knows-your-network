@@ -30,7 +30,7 @@ Generic best practices, a template, the current end state, and guessed intermedi
 4. Read `references/card-templates.md` and use only the selected template sections.
 5. Keep final facts and actual evidence-backed route details; exclude command transcripts, chat history, temporary failures, full logs, and discarded designs.
 6. Update `$network-state` with confirmed reusable network facts. Do not turn pre-existing network discovery into a process card.
-7. Update a project status index only with the final state and links to cards that actually exist.
+7. If the project already has a status index, update it only with the final state and links to cards that actually exist. Do not create an index solely for this workflow.
 8. Scan only the created cards for credentials and unnecessary private details.
 
 ## Output paths
@@ -52,4 +52,4 @@ Use `rg` for a quick heuristic scan, then inspect matches:
 rg -n "token=|password|passwd|passphrase|api[_ -]?key|private[_ -]?key|preshared[_ -]?key|pre-shared[_ -]?key|secret|cookie|session|BEGIN .*PRIVATE KEY|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" <created-card-paths>
 ```
 
-Report which cards were created, any omitted card and its evidence reason, network-card updates, project-index changes, and the sensitive-information check.
+Report created cards, network-card updates, any existing project-index change, and the sensitive-information check. Explain an omitted card only when the user requested it or the evidence gap materially affects the result.

@@ -22,7 +22,7 @@ Create or adopt one private global skill. Never inspect network configuration, r
 3. First synchronized device: create or adopt the skill, then connect an empty confirmed GitHub private repository.
 4. Additional device: install the plugin and clone the confirmed private repository directly into the active target; do not initialize first.
 
-Ask only for the target path, a short profile name and scope, whether GitHub private synchronization is wanted, and whether this is the first or another device.
+Use the default target path unless the user provides another one. Ask only for a short profile name and scope when they are not already clear, and whether GitHub private synchronization is wanted. Only when synchronization is selected, determine whether this is the first or an additional device; ask only if the request and target do not make that clear.
 
 ## Active path
 

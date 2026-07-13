@@ -86,7 +86,7 @@ def main() -> int:
 
     print("Initialized private network-state skill.")
     print(f"path: {target}")
-    print("next: edit profile.md and references/devices.md, then run validate_profile.py")
+    print("next: edit profile.md; add confirmed cards when available; then run validate_profile.py")
     return 0
 
 

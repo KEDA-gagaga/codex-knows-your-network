@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-> Version: `0.1.3` · Stable release
+> Version: `0.1.4` · Stable release
 
 > Turn a constantly changing private network into a knowledge layer that Codex can use across projects, load on demand, and maintain over time—kept local or optionally shared across devices through a GitHub private repository.
 
@@ -12,7 +12,7 @@ Still struggling to keep a complex network state organized?
 
 Still explaining your hosts, services, proxies, and access paths one by one every time you open a new task, switch projects, or move to another device?
 
-Still digging through notes and chat history to reconstruct every device's Tailscale IP, Nginx reverse proxy, Docker ports, domains, TLS, and connection paths?
+Still jumping between notes, monitoring dashboards, terminal status output, admin panels, and chat history to reconstruct every device's Tailscale IP, Nginx reverse proxy, Docker ports, domains, TLS, and connection paths?
 
 The real problem is not that you have failed to remember enough. It is that constantly changing network knowledge has no single trusted, maintainable source. Freezing every detail inside one large skill is not the answer either: network state changes, real endpoints are private, and stale or irrelevant material consumes the agent's context.
 

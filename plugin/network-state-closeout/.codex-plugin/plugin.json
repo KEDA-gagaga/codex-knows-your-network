@@ -1,12 +1,12 @@
 {
   "name": "network-state-closeout",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Initialize a private global network-state skill with consent-based discovery, maintain categorized cards with progressive loading, and optionally synchronize it across devices through GitHub private repositories.",
   "author": {
     "name": "Network State Closeout contributors"
   },
-  "homepage": "https://github.com/KEDA-gagaga/network-state-closeout",
-  "repository": "https://github.com/KEDA-gagaga/network-state-closeout",
+  "homepage": "https://github.com/KEDA-gagaga/codex-knows-your-network",
+  "repository": "https://github.com/KEDA-gagaga/codex-knows-your-network",
   "license": "MIT",
   "keywords": [
     "network-state",

@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-> Version: `0.1.6` · Stable release
+> Version: `0.1.7` · Stable release
 
 > **Tell Codex once. Keep your network current.**
 
@@ -30,7 +30,7 @@ Send the following text to Codex:
 
 ```text
 Please install and use this plugin:
-https://github.com/KEDA-gagaga/network-state-closeout
+https://github.com/KEDA-gagaga/codex-knows-your-network
 
 Read INSTALL_WITH_CODEX.md in the repository and follow its agent installation workflow. After installation, start a new task and guide me through initializing my private network state.
 ```
@@ -198,7 +198,7 @@ The GitHub repository must be private. Confirm visibility for the first push and
 The recommended route is to let Codex follow [INSTALL_WITH_CODEX.md](INSTALL_WITH_CODEX.md). The command-line entry point is:
 
 ```bash
-codex plugin marketplace add KEDA-gagaga/network-state-closeout
+codex plugin marketplace add KEDA-gagaga/codex-knows-your-network
 codex plugin add network-state-closeout@network-state-closeout
 ```
 

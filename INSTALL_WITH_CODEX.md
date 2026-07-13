@@ -5,7 +5,7 @@ This document is for an agent that receives the repository link. Its goal is to 
 Repository:
 
 ```text
-https://github.com/KEDA-gagaga/network-state-closeout
+https://github.com/KEDA-gagaga/codex-knows-your-network
 ```
 
 ## Why this deployment model exists
@@ -34,7 +34,7 @@ Confirm that the repository URL, `.agents/plugins/marketplace.json`, `plugin/net
 Prefer the plugin commands available in the current Codex environment:
 
 ```bash
-codex plugin marketplace add KEDA-gagaga/network-state-closeout
+codex plugin marketplace add KEDA-gagaga/codex-knows-your-network
 codex plugin list --marketplace network-state-closeout
 ```
 
